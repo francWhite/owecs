@@ -2,10 +2,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Owecs;
 
-IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
+var host = Host.CreateDefaultBuilder(args)
+	.ConfigureServices(services =>
     {
-        services.AddHostedService<Worker>();
+        services.AddHostedService<Service>();
     })
     .Build();
 

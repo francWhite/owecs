@@ -1,6 +1,6 @@
 ﻿{
   "profiles": {
-    "Owecs": {
+    "Owecs.Service": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "environmentVariables": {

@@ -1,13 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk.Worker">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
-        <ImplicitUsings>disable</ImplicitUsings>
-        <UserSecretsId>dotnet-Owecs-111996F3-F7BC-4140-A9F8-A5013F1A2FEF</UserSecretsId>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-Owecs.Service-BACE64B9-CE61-4C0C-88C5-C02F8BEFFBC6</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Owecs.Forwarding\Owecs.Forwarding.csproj" />
     </ItemGroup>
 </Project>
